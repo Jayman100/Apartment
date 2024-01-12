@@ -1,0 +1,35 @@
+.profile {
+  &__container {
+    max-width: 120rem;
+    margin: 2rem auto;
+  }
+
+  &__form {
+    border: 1px solid #555;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    fieldset {
+      padding: 1rem;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    gap: 2rem;
+    align-self: flex-end;
+
+    &--cancel {
+      background-color: #eee;
+      padding: 0.5rem 1rem;
+    }
+
+    &--save {
+      background-color: #555;
+      padding: 0.5rem 1rem;
+      color: #fff;
+    }
+  }
+}

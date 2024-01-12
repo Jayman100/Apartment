@@ -1,0 +1,5 @@
+@mixin position-center-h {
+  position: absolute;
+  left: 50%;
+  translate: -50%;
+}

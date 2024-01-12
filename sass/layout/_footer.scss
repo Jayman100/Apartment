@@ -1,0 +1,53 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  padding: 4.5rem 0;
+
+  &__container {
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+
+    &--1 {
+      display: flex;
+    }
+
+    &--2 {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__box {
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  &__company {
+    width: 50%;
+  }
+
+  &__dash {
+    height: 0.1rem;
+    width: 100%;
+    background-color: #eee;
+  }
+
+  &__link {
+    list-style: none;
+
+    li:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+
+  &__services,
+  &__social {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+}

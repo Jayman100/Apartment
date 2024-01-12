@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Apartment</title>
+  </head>
+  <body>
+    <nav class="app__header">
+      <div class="app__header--container">
+        <div class="header__logo-box">
+          <img src="#" class="header__logo" alt="logo" />
+        </div>
+
+        <div class="app__link-box">
+          <a href="rent.html" class="app__for-rent">For rent</a>
+          <a href="#" class="app__request">Request</a>
+          <div class="app__account">
+            <button class="app__account--btn">My Account</button>
+
+            <div class="app__account--nav app__account--hidden">
+              <ul class="app__account--lists">
+                <li class="app__account--list">
+                  <a href="Dashboard.html"># <span>My Dashboard</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list">
+                  <a href="profile.html"># <span>My profile</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list">
+                  <a href="bookmark.html"># <span>Saved List</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list">
+                  <a href="Listing.html"># <span>List a home</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list app__account--logout">
+                  <a href="#"># <span>Log out</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="app__notification">
+            <button class="app__notification--btn">Alerts</button>
+
+            <div class="app__notification--nav app__notification--hidden">
+              <button class="app__notification--btn-close">X</button>
+
+              <div class="app__notification--nav-box">
+                <p class="app__notification--nav-text">
+                  You do not have any alert yet!
+                </p>
+
+                <div class="app__notification--nav-alerts"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="apartment">
+      <div class="apartment__container">
+        <div class="apartment__container--1">
+          <div class="apartment__link">
+            <a href="rent.html" class="apartment__link--back"
+              ># <span>Back to property list</span></a
+            >
+          </div>
+
+          <div class="apartment__details">
+            <div class="apartment__details--1">
+              <p class="apartment__details--title">A room self con.</p>
+              <address class="apartment__details--address">
+                Tanke,ilorin, Kwara
+              </address>
+            </div>
+
+            <div class="apartment__details--1">
+              <p class="apartment__details--price">N100,000</p>
+              <p class="apartment__details--text">per annum</p>
+            </div>
+          </div>
+
+          <div class="apartment__slider">
+            <div class="slide"><img src="#" alt="Photo 1" /></div>
+            <div class="slide"><img src="#" alt="Photo 2" /></div>
+            <div class="slide"><img src="#" alt="Photo 3" /></div>
+            <div class="slide"><img src="#" alt="Photo 4" /></div>
+
+            <button class="slider__btn slider__btn--left">&larr;</button>
+            <button class="slider__btn slider__btn--right">&rarr;</button>
+            <div class="dots"></div>
+          </div>
+
+          <div class="apartment__info">
+            <ul class="apartment__info--lists">
+              <li class="apartment__info--list">
+                <a href="#"
+                  ><p>#</p>
+                  <p><span>1</span>Bathroom</p></a
+                >
+              </li>
+              <div class="apartment__dash"></div>
+
+              <li class="apartment__info--list">
+                <a href="#"
+                  ><p>#</p>
+                  <p><span>1</span>Toilet</p></a
+                >
+              </li>
+              <div class="apartment__dash"></div>
+
+              <li class="apartment__info--list">
+                <a href="#"
+                  ><p>#</p>
+                  <p><span>1</span>Bedroom</p></a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="apartment__bookmark">
+            <p class="apartment__bookmark--text"># <span>save</span></p>
+          </div>
+
+          <div class="apartment__description">
+            <div class="apartment__description--btn">
+              <button class="apartment__description--btn-details">
+                # <span>Details</span>
+              </button>
+              <div class="apartment__dash"></div>
+
+              <button class="apartment__description--btn-map">
+                # <span>Map</span>
+              </button>
+              <div class="apartment__dash"></div>
+            </div>
+
+            <div class="apartment__description--details">
+              <p class="apartment__description--details-heading">
+                Property Details
+              </p>
+              <p class="apartment__description--details-texts">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. In
+                impedit, ad veniam cupiditate aliquam facere minima soluta minus
+                distinctio labore praesentium sed velit excepturi odit
+                aspernatur! Tenetur unde accusamus voluptate.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="apartment__container--2">
+          <div class="apartment__agent">
+            <p class="apartment__agent--heading">Posted By</p>
+
+            <div class="apartment__agent--img">
+              <img src="#" alt="agent photo" />
+            </div>
+
+            <a href="agents.html" class="apartment__agent--name"
+              >Akhmas Rahman</a
+            >
+
+            <ul class="apartment__agent--lists">
+              <li class="apartment__agent--list">
+                # <span>Olohunda street, alagbede , ilorin</span>
+              </li>
+              <li class="apartment__agent--list"># <span>O8103147269</span></li>
+              <li class="apartment__agent--list"># <span>07018473861</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

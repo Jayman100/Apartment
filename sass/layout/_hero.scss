@@ -1,0 +1,33 @@
+.hero {
+  border: 1px solid #000;
+  // height: 80vh;
+  padding: 3rem;
+
+  &__container {
+    max-width: 120rem;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  &__text-box {
+    width: 50%;
+  }
+
+  &__heading {
+    font-size: 8rem;
+    letter-spacing: 0.75px;
+
+    span {
+      background-color: #eee;
+      color: #555;
+    }
+  }
+
+  &__sub-heading {
+    font-size: 3rem;
+  }
+
+  &__btn {
+    font-size: 3rem;
+  }
+}

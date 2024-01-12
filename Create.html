@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script defer src="./scripts/main.js"></script>
+    <title>Create Listings</title>
+  </head>
+  <body>
+    <nav class="app__header">
+      <div class="app__header--container">
+        <div class="header__logo-box">
+          <img src="#" class="header__logo" alt="logo" />
+        </div>
+
+        <div class="app__link-box">
+          <a href="rent.html" class="app__for-rent">For rent</a>
+          <a href="#" class="app__request">Request</a>
+          <div class="app__account">
+            <button class="app__account--btn">My Account</button>
+
+            <div class="app__account--nav app__account--hidden">
+              <ul class="app__account--lists">
+                <li class="app__account--list">
+                  <a href="Dashboard.html"># <span>My Dashboard</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list">
+                  <a href="profile.html"># <span>My profile</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list">
+                  <a href="bookmark.html"># <span>Saved List</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list">
+                  <a href="Listing.html"># <span>List a home</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list app__account--logout">
+                  <a href="#"># <span>Log out</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="app__notification">
+            <button class="app__notification--btn">Alerts</button>
+
+            <div class="app__notification--nav app__notification--hidden">
+              <button class="app__notification--btn-close">X</button>
+
+              <div class="app__notification--nav-box">
+                <p class="app__notification--nav-text">
+                  You do not have any alert yet!
+                </p>
+
+                <div class="app__notification--nav-alerts"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="create">
+      <div class="create__header">
+        <p class="create__header--text">Add Listing</p>
+      </div>
+      <div class="create__container">
+        <div class="create__steps">
+          <div class="create__steps--details">
+            <div class="create__steps--details-dash create__dash"></div>
+            <p class="create__steps--details-text create__text">
+              # <span>Property Details</span>
+            </p>
+          </div>
+
+          <div class="create__steps--picture">
+            <div class="create__steps--picture-dash create__dash"></div>
+            <p class="create__steps--picture-text create__text">
+              # <span>Pictures</span>
+            </p>
+          </div>
+
+          <div class="create__steps--done">
+            <div class="create__steps--done-dash create__dash"></div>
+            <p class="create__steps--done-text create__text">
+              # <span>Done</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="create__wrapper">
+        <form action="#" class="create__form">
+          <p class="create__form--heading">Add your property</p>
+          <fieldset class="create__kind">
+            <div class="create__kind--1">
+              <input
+                name="kind"
+                id="publish"
+                type="radio"
+                class="create__kind--publish"
+                value="publish"
+              />
+              <label for="publish">Publish</label>
+            </div>
+
+            <div class="create__kind--2">
+              <input
+                name="kind"
+                id="unpublish"
+                type="radio"
+                class="create__kind--unpublish"
+                value="unpublish"
+              />
+              <label for="unpublish">Unpublish</label>
+            </div>
+          </fieldset>
+
+          <div class="create__dash"></div>
+
+          <fieldset class="create__info">
+            <div class="create__info--title">
+              <label for="title">Title</label>
+              <input
+                type="text"
+                id="title"
+                class="create__info--title-input create__inputs"
+                placeholder="e.g A Bedroom Flat with excellent facilties"
+              />
+            </div>
+
+            <div class="create__selects">
+              <div class="create__info--status">
+                <label for="status">Property Status</label>
+                <select
+                  name="Property status"
+                  class="create__info--status-select create__inputs"
+                  id="status"
+                >
+                  <option value="available">Available</option>
+                  <option value="rented">Rented</option>
+                </select>
+              </div>
+
+              <div class="create__info--type">
+                <label for="type">Type</label>
+                <select
+                  name="Type"
+                  class="create__info--type-select create__inputs"
+                  id="type"
+                >
+                  <option value="">Select type</option>
+                  <option value="flat">Flat/Apartment</option>
+                  <option value="self con.">Self con.</option>
+                </select>
+              </div>
+            </div>
+          </fieldset>
+
+          <div class="create__dash"></div>
+
+          <fieldset class="create__address">
+            <div class="create__address--city">
+              <label for="city">City</label>
+              <input
+                type="text"
+                class="create__address--city-input create__inputs"
+                id="city"
+                placeholder="eg ilorin"
+              />
+            </div>
+
+            <div class="create__address--street">
+              <label for="street">Address</label>
+              <input
+                type="text"
+                class="create__address--street-input create__inputs"
+                id="street"
+                placeholder="e.g 36c, olohunda street"
+              />
+            </div>
+            <div class="create__address--state">
+              <label for="state">State</label>
+              <input
+                type="text"
+                class="create__address--state-input create__inputs"
+                id="state"
+                placeholder="e.g kwara state"
+              />
+            </div>
+            <div class="create__address--country">
+              <label for="country">Country</label>
+              <input
+                type="text"
+                class="create__address--country-input create__inputs"
+                id="country"
+                placeholder="e.g Nigeria"
+              />
+            </div>
+          </fieldset>
+
+          <div class="create__dash"></div>
+
+          <fieldset class="create__price">
+            <label for="agent-fee">Agent fee</label>
+            <input
+              type="text"
+              class="create__agent-fee--input create__inputs"
+              id="agent-fee"
+              placeholder="eg 500000"
+            />
+            <label for="main-fee">Property price</label>
+            <input
+              type="text"
+              class="create__main-fee--input create__inputs"
+              id="main-fee"
+              placeholder="eg 500000"
+            />
+          </fieldset>
+
+          <div class="create__dash"></div>
+
+          <fieldset class="create__features">
+            <div class="create__features--bathroom">
+              <label for="bathroom"> Bathroom </label>
+              <input
+                type="number"
+                class="create__features--bathroom-input create__inputs"
+                id="bathroom"
+              />
+            </div>
+
+            <div class="create__features--toilet">
+              <label for="Toilet"> Toilet </label>
+              <input
+                type="number"
+                class="create__features--toile-input create__inputs"
+                id="Toilet"
+              />
+            </div>
+
+            <div class="create__features--bedroom">
+              <label for="bedroom"> Bedroom </label>
+              <input
+                type="number"
+                class="create__features--bedroom-input create__inputs"
+                id="bedroom"
+              />
+            </div>
+          </fieldset>
+
+          <div class="create__dash"></div>
+
+          <fieldset class="create__description">
+            <label for="description">Description</label>
+            <textarea
+              name="Description"
+              id="description"
+              cols="30"
+              rows="10"
+              class="create__description--input"
+            ></textarea>
+          </fieldset>
+
+          <div class="create__btn">
+            <button class="create__btn--cancel create__btn--1">cancel</button>
+            <button class="create__btn--next create__btn--2">Next</button>
+          </div>
+        </form>
+
+        <div class="create__picture create__hidden">
+          <div class="create__picture--container">
+            <div class="create__picture-box">
+              <div class="create__picture-boxs">
+                <img src="#" alt="picture 1" />
+              </div>
+
+              <button class="create__picture--btn-del create__btn--2">
+                Delete
+              </button>
+            </div>
+
+            <div class="create__picture--upload">
+              <p class="create__picture--text">
+                <span>Drag and drop pictures here</span>
+                <span>or</span>
+              </p>
+              <label class="create__picture--label" for="picture">
+                <input type="file" id="picture" multiple />
+              </label>
+
+              <p class="create__picture--text-min">maximum of 15 pictures</p>
+            </div>
+            <div class="create__picture--btn create__btn">
+              <a href="#" class="create__picture--btn-prev create__btn--1">
+                Edit Property Details
+              </a>
+              <a href="#" class="create__picture--btn-next create__btn--2">
+                Finish
+              </a>
+            </div>
+          </div>
+
+          <div class="create__picture--details">
+            <p class="create__picture--details-heading">Property Details</p>
+
+            <ul class="create__picture--details-lists">
+              <li class="create__picture--details-list-1">
+                <p class="create__picture--details-list-heading">Title</p>
+                <p class="create__picture--details-list-text">
+                  A room self Con.
+                </p>
+              </li>
+              <li class="create__picture--details-list-2">
+                <p class="create__picture--details-list-heading">Type</p>
+                <p class="create__picture--details-list-text">Self con.</p>
+              </li>
+              <li class="create__picture--details-list-3">
+                <p class="create__picture--details-list-heading">Address</p>
+                <p class="create__picture--details-list-text">
+                  Tanke,ilorin,kwara
+                </p>
+              </li>
+              <li class="create__picture--details-list-4">
+                <p class="create__picture--details-list-heading">Price</p>
+                <p class="create__picture--details-list-text">
+                  N400,000 per annum
+                </p>
+              </li>
+              <li class="create__picture--details-list-5">
+                <p class="create__picture--details-list-heading">Status</p>
+                <p class="create__picture--details-list-text">Unpublished</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My Bookmarks</title>
+  </head>
+  <body>
+    <nav class="app__header">
+      <div class="app__header--container">
+        <div class="header__logo-box">
+          <img src="#" class="header__logo" alt="logo" />
+        </div>
+
+        <div class="app__link-box">
+          <a href="rent.html" class="app__for-rent">For rent</a>
+          <a href="#" class="app__request">Request</a>
+          <div class="app__account">
+            <button class="app__account--btn">My Account</button>
+
+            <div class="app__account--nav app__account--hidden">
+              <ul class="app__account--lists">
+                <li class="app__account--list">
+                  <a href="Dashboard.html"># <span>My Dashboard</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list">
+                  <a href="profile.html"># <span>My profile</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list">
+                  <a href="bookmark.html"># <span>Saved List</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list">
+                  <a href="Listing.html"># <span>List a home</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list app__account--logout">
+                  <a href="#"># <span>Log out</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="app__notification">
+
+            <button class="app__notification--btn">Alerts</button>
+
+            <div class="app__notification--nav app__notification--hidden">
+              <button class="app__notification--btn-close">X</button>
+
+              <div class="app__notification--nav-box">
+                <p class="app__notification--nav-text">You do not have any alert yet!</p>
+
+                <div class="app__notification--nav-alerts"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="bookmark">
+      <div class="bookmark__container">
+        <div class="bookmark__items">
+          <p class="bookmark__items--text">No property is saved yet.</p>
+
+          <div class="rent__hostel bookmark__hidden">
+            <div class="rent__hostel--1">
+              <div class="rent__hostel--img-box">
+                <img src="#" alt="hostel img" class="rent__hostel--img" />
+              </div>
+              <div class="rent__hostel--info">
+                <a href="apartment.html" class="rent__hostel--type">A room Self Contain</a>
+                <p class="rent__hostel--location">Tanke, Ilorin</p>
+                <p class="rent__hostel--details">
+                  A Neat self con. is available at tanke,ilorin with ......
+                </p>
+                <a href="apartment.html" class="rent__hostel--more-details-btn"
+                  >More details</a
+                >
+
+                <p class="rent__hostel--day">posted: <span>today</span></p>
+                <div class="rent__hostel--price-box">
+                  <p>
+                    <span class="price">N100,000</span><span>per annum</span>
+                  </p>
+
+                  <div class="rent__hostel--agent-info">
+                       <p class="rent__agent--name">Akhmas Rahman</p>
+                       <p class="rent__agent--phone">
+                            <p class="rent__agent--icon">#</p>
+                            <p class="rent__agent--number">08129873899</p>
+                       </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="rent__hostel--2">
+              <ul>
+                <li class="rent__hostel--list">
+                  <div class="rent__hostel--icon">#</div>
+                  <p class="rent__hostel--icon">1 bedroom</p>
+                </li>
+                <li class="rent__hostel--list">
+                  <div class="rent__hostel--icon">#</div>
+                  <p class="rent__hostel--icon">1 Bathroom</p>
+                </li>
+                <li class="rent__hostel--list">
+                  <div class="rent__hostel--icon">#</div>
+                  <p class="rent__hostel--icon">1 Toilet</p>
+                </li>
+                <button class="rent__hostel--btn">
+                  <div class="rent__hostel--icon">#</div>
+                  <p class="rent__hostel--icon">Save</p>
+                </button>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="bookmark__btn">
+          <a href="rent.html" class="bookmark__link">Add property</a>
+
+          
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

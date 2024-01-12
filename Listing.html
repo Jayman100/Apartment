@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My Listing</title>
+  </head>
+  <body>
+    <nav class="app__header">
+      <div class="app__header--container">
+        <div class="header__logo-box">
+          <img src="#" class="header__logo" alt="logo" />
+        </div>
+
+        <div class="app__link-box">
+          <a href="rent.html" class="app__for-rent">For rent</a>
+          <a href="#" class="app__request">Request</a>
+          <div class="app__account">
+            <button class="app__account--btn">My Account</button>
+
+            <div class="app__account--nav app__account--hidden">
+              <ul class="app__account--lists">
+                <li class="app__account--list">
+                  <a href="Dashboard.html"># <span>My Dashboard</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list">
+                  <a href="profile.html"># <span>My profile</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list">
+                  <a href="bookmark.html"># <span>Saved List</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list">
+                  <a href="Listing.html"># <span>List a home</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list app__account--logout">
+                  <a href="#"># <span>Log out</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="app__notification">
+            <button class="app__notification--btn">Alerts</button>
+
+            <div class="app__notification--nav app__notification--hidden">
+              <button class="app__notification--btn-close">X</button>
+
+              <div class="app__notification--nav-box">
+                <p class="app__notification--nav-text">
+                  You do not have any alert yet!
+                </p>
+
+                <div class="app__notification--nav-alerts"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="listing">
+      <div class="listing__container">
+        <div class="listing__container--1">
+          <form action="#" class="listing__form">
+            <input
+              type="search"
+              class="listing__search-bar"
+              size="60"
+              placeholder="Search for listings"
+            />
+            <button class="listing__search--btn">Search</button>
+          </form>
+
+          <div class="listing__btn">
+            <a href="Create.html" class="listing__btn--add">Add property</a>
+            <button class="listing__btn--delete">Delete all listings</button>
+          </div>
+
+          <div class="listing__wrapper">
+            <p class="listing__text">
+              No listings yets, click the add property button to list property..
+            </p>
+
+            <div class="listing__box">
+              <div class="listing__info">
+                <a href="#" class="listing__title"
+                  >A bedroom flat with excellent facilities.</a
+                >
+                <div class="listing__info--container">
+                  <div class="listing__info--img">
+                    <img src="#" alt="apartment picture" />
+                  </div>
+
+                  <div class="listing__info--details">
+                    <a href="#" class="listing__info--type">Flat/Apartment</a>
+                    <address class="listing__info--location">
+                      # <span>Tanke, ilorin,kwara</span>
+                    </address>
+
+                    <p class="listing__info--date">
+                      # <span>22 Dec 2023</span>
+                    </p>
+
+                    <div class="listing__info--dash"></div>
+
+                    <p class="listing__info--price">
+                      <span class="listing__info--price-num">N400,000</span>
+                      <span class="listing__info--price--text">per annum</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="listing__edit">
+                <ul class="listing__edit--lists">
+                  <li class="listing__edit--list">
+                    <a href="#"># <span>Edit</span></a>
+                  </li>
+                  <div class="listing__edit--dash"></div>
+                  <li class="listing__edit--list">
+                    <a href="#"># <span>Pictures</span></a>
+                  </li>
+
+                  <div class="listing__edit--dash"></div>
+
+                  <li class="listing__edit--list">
+                    <a href="#"># <span>Unpublished</span></a>
+                  </li>
+                  <div class="listing__edit--dash"></div>
+
+                  <li class="listing__edit--list">
+                    <a href="#"># <span>Delete</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <a href="Create.html" class="listing__btn--add">Add property</a>
+        </div>
+
+        <div class="listing__container--2">
+          <p class="listing__statistics--heading">
+            # <span>Quick Statistics</span>
+          </p>
+
+          <ul class="listing__statistics--lists">
+            <li class="listing__statistics--publish">
+              Published Listing: <span>0</span>
+            </li>
+            <li class="listing__statistics--unpublish">
+              Unpublished Listing: <span>0</span>
+            </li>
+            <li class="listing__statistics--total">
+              Total Listing: <span>0</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

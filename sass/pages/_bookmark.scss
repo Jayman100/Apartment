@@ -1,0 +1,33 @@
+.bookmark {
+  &__container {
+    max-width: 120rem;
+    border: 1px solid #555;
+    margin: 4rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1rem;
+  }
+
+  &__hidden.rent__hostel {
+    display: none;
+  }
+
+  &__items {
+    background-color: #eee;
+    padding: 2rem;
+
+    &--text {
+      text-align: center;
+    }
+  }
+
+  &__btn {
+    align-self: flex-end;
+  }
+
+  &__link:link,
+  &__link:active {
+    text-decoration: none;
+  }
+}

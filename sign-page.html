@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Sign-up</title>
+  </head>
+  <body>
+    <section class="sign">
+      <div class="sign__wrapper">
+        <div class="sign-up">
+          <p class="sign-up__header">Create account</p>
+          <form action="#" class="sign-up__form">
+            <label for="name" class="sign-up__label">Name</label>
+            <input
+              type="text"
+              id="name"
+              class="sign-up__input sign-up__input--name"
+            />
+
+            <label for="username" class="sign-up__label">Username</label>
+            <input
+              type="text"
+              id="username"
+              class="sign-up__input sign-up__input--username"
+            />
+
+            <label for="email" class="sign-up__label">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="sign-up__input sign-up__input--mail"
+            />
+
+            <label for="password" class="sign-up__label">Password</label>
+            <input
+              type="password"
+              id="name"
+              class="sign-up__input sign-up__input--password"
+            />
+
+            <label for="confirmPassword" class="sign-up__label"
+              >Confirm password</label
+            >
+            <input
+              type="password"
+              id="confirmPassword"
+              class="sign-up__input sign-up__input--confirm"
+            />
+
+            <div class="sign-up__account-type">
+              <p class="sign-up__account-type--header">Account Type</p>
+
+              <div class="sign-up__account-type--box">
+                <label for="student">
+                  <input
+                    type="radio"
+                    name="type"
+                    id="student"
+                    class="sign-up__account-type--student"
+                  />
+                  <span
+                    >Student [<em>Searching for apartment </em>]</span
+                  ></label
+                >
+
+                <label for="agent">
+                  <input
+                    type="radio"
+                    name="type"
+                    id="agent"
+                    class="sign-up__account-type--agent"
+                  />
+                  <span>Agent</span></label
+                >
+              </div>
+            </div>
+
+            <button class="sign-up__button">Register Now</button>
+            <p class="sign-up__terms">
+              By registering you accept our <a href="#">Terms of Use</a> and
+              <a href="#">Privacy</a> policies
+            </p>
+          </form>
+
+          <p class="sign-up__footer">
+            Already have an account?
+            <a href="#">Click here to sign in.</a>
+          </p>
+        </div>
+
+        <div class="sign-in">
+          <p class="sign-in__header">Sign in to your account</p>
+          <form action="#" class="sign-in__form">
+            <label for="name" class="sign-in__label">Email or Username</label>
+            <input
+              type="text"
+              id="name"
+              class="sign-in__input sign-in__input--name"
+            />
+
+            <label for="password" class="sign-in__label">Password</label>
+            <input
+              type="password"
+              id="name"
+              class="sign-in__input sign-in__input--password"
+            />
+
+            <button class="sign-in__button">Sign in</button>
+          </form>
+
+          <div class="sign-in__footer">
+            <p>
+              Forget password? <a href="#">Click here to reset password.</a>
+            </p>
+            <p>
+              Don't have an account? <a href="#">Click here to register.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

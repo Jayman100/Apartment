@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <nav class="app__header">
+      <div class="app__header--container">
+        <div class="header__logo-box">
+          <img src="#" class="header__logo" alt="logo" />
+        </div>
+
+        <div class="app__link-box">
+          <a href="rent.html" class="app__for-rent">For rent</a>
+          <a href="#" class="app__request">Request</a>
+          <div class="app__account">
+            <button class="app__account--btn">My Account</button>
+
+            <div class="app__account--nav app__account--hidden">
+              <ul class="app__account--lists">
+                <li class="app__account--list">
+                  <a href="Dashboard.html"># <span>My Dashboard</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list">
+                  <a href="profile.html"># <span>My profile</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list">
+                  <a href="bookmark.html"># <span>Saved List</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list">
+                  <a href="Listing.html"># <span>List a home</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list app__account--logout">
+                  <a href="#"># <span>Log out</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="app__notification">
+            <button class="app__notification--btn">Alerts</button>
+
+            <div class="app__notification--nav app__notification--hidden">
+              <button class="app__notification--btn-close">X</button>
+
+              <div class="app__notification--nav-box">
+                <p class="app__notification--nav-text">
+                  You do not have any alert yet!
+                </p>
+
+                <div class="app__notification--nav-alerts"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="dashboard">
+      <div class="dashboard__greeting">
+        <p class="dashboard__user-greeting">Welcome home</p>
+        <p class="dashboard__user-name">Jamiu Garba</p>
+      </div>
+
+      <div class="dashboard__container">
+        <a href="profile.html" class="dashboard__profile dashboard--box">
+          <!-- To be replaced -->
+          <div class="dashboard__profile--icon dashboard--icon">Icon</div>
+          <p class="dashboard__profile--heading dashboard--heading">
+            My Profile
+          </p>
+          <p class="dashboard__profile--text dashboard--text">
+            Add information about yourself.
+          </p>
+        </a>
+
+        <a href="Listing.html" class="dashboard__listings dashboard--box">
+          <!-- To be replaced -->
+          <div class="dashboard__listings--icon dashboard--icon">Icon</div>
+          <p class="dashboard__listings--heading dashboard--heading">
+            My Listings
+          </p>
+          <p class="dashboard__listings--text dashboard--text">
+            Add, edit and remove listings.
+          </p>
+        </a>
+
+        <a href="" class="dashboard__requests dashboard--box">
+          <!-- To be replaced -->
+          <div class="dashboard__requests--icon dashboard--icon">Icon</div>
+          <p class="dashboard__requests--heading dashboard--heading">
+            My Requests
+          </p>
+          <p class="dashboard__requests--text dashboard--text">
+            Check the property requests you have made on.
+          </p>
+        </a>
+
+        <a href="bookmark.html" class="dashboard__bookmark dashboard--box">
+          <!-- To be replaced -->
+          <div class="dashboard_bookmark--icon dashboard--icon">Icon</div>
+          <p class="dashboard__bookmark--heading dashboard--heading">
+            My Saved Property
+          </p>
+          <p class="dashboard__bookmark--text dashboard--text">
+            See saved properties.
+          </p>
+        </a>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Profile</title>
+  </head>
+  <body>
+    <nav class="app__header">
+      <div class="app__header--container">
+        <div class="header__logo-box">
+          <img src="#" class="header__logo" alt="logo" />
+        </div>
+
+        <div class="app__link-box">
+          <a href="rent.html" class="app__for-rent">For rent</a>
+          <a href="#" class="app__request">Request</a>
+          <div class="app__account">
+            <button class="app__account--btn">My Account</button>
+
+            <div class="app__account--nav app__account--hidden">
+              <ul class="app__account--lists">
+                <li class="app__account--list">
+                  <a href="Dashboard.html"># <span>My Dashboard</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list">
+                  <a href="profile.html"># <span>My profile</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list">
+                  <a href="bookmark.html"># <span>Saved List</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list">
+                  <a href="Listing.html"># <span>List a home</span></a>
+                </li>
+                <div class="app__account--dash"></div>
+                <li class="app__account--list app__account--logout">
+                  <a href="#"># <span>Log out</span></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="app__notification">
+            <button class="app__notification--btn">Alerts</button>
+
+            <div class="app__notification--nav app__notification--hidden">
+              <button class="app__notification--btn-close">X</button>
+
+              <div class="app__notification--nav-box">
+                <p class="app__notification--nav-text">
+                  You do not have any alert yet!
+                </p>
+
+                <div class="app__notification--nav-alerts"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section class="profile">
+      <div class="profile__container">
+        <p class="profile__header">My Personal Info</p>
+
+        <form action="#" class="profile__form">
+          <fieldset class="profile__img--upload">
+            <div class="profile__user-img">
+              <img src="#" alt="user photo" />
+            </div>
+            <div class="profile__user-img--upload">
+              <input
+                type="file"
+                class="profile__upload"
+                id="upload"
+                accept="images"
+              />
+              <label for="upload"># <span>upload</span></label>
+            </div>
+          </fieldset>
+
+          <div class="profile__dash"></div>
+
+          <fieldset class="profile__type-box">
+            <p class="profile__account-type--header">Account Type</p>
+
+            <div class="profile__account-type--box">
+              <label for="student">
+                <input
+                  type="radio"
+                  name="type"
+                  id="student"
+                  class="profile__account-type--student"
+                />
+                <span>Student</span></label
+              >
+
+              <label for="agent">
+                <input
+                  type="radio"
+                  name="type"
+                  id="agent"
+                  class="profile__account-type--agent"
+                />
+                <span>Agent</span></label
+              >
+            </div>
+          </fieldset>
+
+          <div class="profile__dash"></div>
+
+          <fieldset class="profile__name-box">
+            <div class="profile__user-name">
+              <label for="name">Name</label>
+              <input id="name" type="text" class="profile__user-name--input" />
+            </div>
+
+            <div class="profile__company-name">
+              <label for="company">Company Name</label>
+              <input
+                type="text"
+                id="company"
+                class="profile__company-name--input"
+              />
+            </div>
+          </fieldset>
+
+          <div class="profile__dash"></div>
+
+          <fieldset class="profile__address">
+            <label for="street">Street</label>
+            <input type="text" id="street" class="profile__address--street" />
+
+            <div class="profile__address-box">
+              <div class="profile__address--city-box">
+                <label for="city">City</label>
+                <input type="text" id="city" class="profile__address--city" />
+              </div>
+
+              <div class="profile__address--state-box">
+                <label for="state">State</label>
+                <input type="text" id="state" class="profile__address--state" />
+              </div>
+
+              <!-- <div class="profile__address--country-box">
+              <label for="country">Country</label>
+              <input type="text" id="country" class="profile__address--country" />
+            </div> -->
+            </div>
+          </fieldset>
+
+          <div class="profile__dash"></div>
+
+          <fieldset class="profile__contact">
+            <div class="profile__contact--tel">
+              <label for="tel">Phone</label>
+              <input type="tel" id="tel" class="profile__address--tel-input" />
+            </div>
+
+            <div class="profile__contact--whatsapp">
+              <label for="whatsapp">WhatSapp</label>
+              <input
+                type="tel"
+                id="whatsapp"
+                class="profile__address--whatsapp-input"
+              />
+            </div>
+
+            <div class="profile__contact--mail">
+              <label for="mail">Email</label>
+              <input
+                type="email"
+                id="mail"
+                class="profile__address--mail-input"
+              />
+            </div>
+          </fieldset>
+
+          <div class="profile__dash"></div>
+
+          <fieldset class="profile__social">
+            <div class="profile__social--fb">
+              <label for="fb">Facebook Profile</label>
+              <input type="text" id="fb" class="profile__social--fb-input" />
+            </div>
+
+            <div class="profile__social--x">
+              <label for="x">X/Twitter Profile</label>
+              <input type="text" id="x" class="profile__social--x-input" />
+            </div>
+
+            <div class="profile__social--linkedin">
+              <label for="linkedin">Linkedin Profile</label>
+              <input
+                type="text"
+                id="linkedin"
+                class="profile__social--linkedin-input"
+              />
+            </div>
+          </fieldset>
+
+          <div class="profile__btn">
+            <button class="profile__btn--cancel">Cancel</button>
+            <button class="profile__btn--save">Save Changes</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
